@@ -50,7 +50,7 @@ h1 {
   font-size: 60px;
   color: rgb(206, 215, 219);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-  margin-top: -50px;
+  margin-top: -75px;
 }
 
 div {
@@ -78,18 +78,22 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: rgb(223, 233, 234);
+  background-color: rgb(56, 111, 161);
   border-radius: 30px;
-  width: 185px;
-  height: 52px;
+  width: 250px;
+  height: 62px;
   margin-top: 8%;
   text-align: center;
   transition: transform 0.2s;
+  color: white;
+  font-size: 20px;
 }
 
 button:hover {
   transform: scale(1.1);
-  border: 1px solid white;
+  border: 3.2px solid rgb(54, 54, 216);
+  background-color: rgb(54, 54, 216);
+  color: white;
 }
 
 .s {
@@ -109,10 +113,24 @@ button:hover {
   justify-content: center;
 }
 
+.s:hover {
+  border: 3px solid white;
+}
+
 .chil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
   background-color: green;
-  width: 100px;
-  height: 10px;
+  border-radius: 3px;
+  width: 620px;
+  height: 32px;
+  border: 1.5px solid rgb(234, 189, 76);
+  color: white;
 }
 
 span {
