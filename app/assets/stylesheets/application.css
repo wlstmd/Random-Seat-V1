@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face {
+  font-family: 'YEONGJUPunggiGinsengTTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/YEONGJUPunggiGinsengTTF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'YEONGJUPunggiGinsengTTF';
+}
+
+body {
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/587/706/322/simple-blue-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 120px;
+  height: 110px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(206, 215, 219);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  margin-top: -50px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(223, 233, 234);
+  border-radius: 30px;
+  width: 185px;
+  height: 52px;
+  margin-top: 8%;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  border: 1px solid white;
+}
+
+.s {
+  display: inline-flex;
+  width: 140px;
+  height: 100px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid rgba(240, 226, 33, 0.325);
+  border-radius: 9%;
+  background-color: rgb(219, 167, 98);
+  margin-right: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.chil {
+  background-color: green;
+  width: 100px;
+  height: 10px;
+}
+
+span {
+  box-shadow: 5px 3px 2px rgba(0, 0, 0, 0.5);
+}

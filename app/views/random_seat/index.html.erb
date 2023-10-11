@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../stylesheets/application.css">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+  <title>HI</title>
+</head>
+<body>
+  <header>
+    <img src="https://i.namu.wiki/i/sEgsxYlPqTKaFyrVpzvQP7dYY8g-Qd8YlupLl6t-v8QwPpmUxIggPqwfdPupszKUlNh3WZuztw0Qkb-i-G9r8w.webp" />
+    <h1>자리 뽑기 결과</h1>
+  </header>
+  <main>
+      <div class="table">
+      <p>
+        <span class="s"><%= @friends_names[@random[0]] %></span>
+        <span class="s"><%= @friends_names[@random[1]] %></span>
+        <span class="s"><%= @friends_names[@random[2]] %></span>
+        <span class="s"><%= @friends_names[@random[3]] %></span>
+        <span class="s"><%= @friends_names[@random[4]] %></span>
+        <br>
+        <br>
+        <span class="s"><%= @friends_names[@random[5]] %></span>
+        <span class="s"><%= @friends_names[@random[6]] %></span>
+        <span class="s"><%= @friends_names[@random[7]] %></span>
+        <span class="s"><%= @friends_names[@random[8]] %></span>
+        <span class="s"><%= @friends_names[@random[9]] %></span>
+        <br>
+        <br>
+        <span class="s"><%= @friends_names[@random[10]] %></span>
+        <span class="s"><%= @friends_names[@random[11]] %></span>
+        <span class="s"><%= @friends_names[@random[12]] %></span>
+        <span class="s"><%= @friends_names[@random[13]] %></span>
+        <span class="s"><%= @friends_names[@random[14]] %></span>
+        <br>
+        <br>
+        <span class="s"><%= @friends_names[@random[15]] %></span>
+        <span class="s"><%= @friends_names[@random[16]] %></span>
+        <span class="s"><%= @friends_names[@random[17]] %></span>
+        <span class="s"><%= @friends_names[@random[18]] %></span>
+      </p>
+      <div class="buttons">
+        <div class="button-container">
+          <button onClick="window.location.reload()"><strong>다시 뽑기</strong></button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
