@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="../stylesheets/application.css">
   <link rel="icon" type="image/png" href="/assets/images/logo.png" />
-  <title>HI</title>
+  <title>Random_Seat</title>
 </head>
 <body>
   <header>
@@ -12,7 +12,7 @@
   </header>
   <main>
     <span class="chil">칠판</span>
-      <div class="table">
+    <div class="table">
       <p>
         <span class="s"><%= @friends_names[@random[0]] %></span>
         <span class="s"><%= @friends_names[@random[1]] %></span>
@@ -47,5 +47,31 @@
       </div>
     </div>
   </main>
+
+  <script>
+    const tables = document.querySelectorAll('.s');
+
+    let selectedTable1 = null;
+    let selectedTable2 = null;
+
+    tables.forEach(table => {
+      table.addEventListener('click', () => {
+        if (!selectedTable1) {
+          selectedTable1 = table;
+          selectedTable1.style.backgroundColor = 'rgb(210, 141, 50)';
+        } else if (!selectedTable2) {
+          selectedTable2 = table;
+          
+          const temp = selectedTable1.innerHTML;
+          selectedTable1.innerHTML = selectedTable2.innerHTML;
+          selectedTable2.innerHTML = temp;
+          
+          selectedTable1.style.backgroundColor = 'rgb(219, 167, 98)';
+          selectedTable1 = null;
+          selectedTable2 = null;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
